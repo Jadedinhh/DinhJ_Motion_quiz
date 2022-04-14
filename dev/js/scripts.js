@@ -6,14 +6,16 @@ document.querySelector("#name").innerHTML = yourName;
 
 //GreenSock Timeline
 
-const firstTL = gsap.timeline();
+const secondTL = gsap.timeline();
 
-firstTL.from(".red", {duration:1, x:0, ease:"power1.out"}, "box")
-.from(".blue", {duration:1, x:350, ease:"power1.out"}, "box");
+secondTL.from(".red", {duration:1, x:0, ease:"power1.out"}, "box")
+.from(".blue", {duration:1, x:350, ease:"power1.out"}, "box")
+.from(".graph", {duration:2, opacity:0.5}, "box")
+.to(".green", {duration:5, x:180}, "box");
 
 
-const first2TL = gsap.timeline({delay:1});
-first2TL.to(".red", {duration:2, y:0, ease:"power1.out"},"box")
+const second2TL = gsap.timeline({delay:1});
+second2TL.to(".red", {duration:2, y:0, ease:"power1.out"},"box")
 .to(".blue", {duration:2, y:300, ease:"power1.out"}, "box");
 
 
