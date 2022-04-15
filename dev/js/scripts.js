@@ -17,4 +17,4 @@ const first2TL = gsap.timeline({delay:2});
 first2TL.to(".red", {duration:2, y:0, ease:"power1.out", rotate: 360},"box")
 .to(".blue", {duration:2, y:300, ease:"power1.out", rotate:360}, "box");
 
-gsap.to(".green", {duration:5, transformOrigin: "0 0"});
+gsap.from(".green", {duration:5, transformOrigin: "left", scaleX:0});
