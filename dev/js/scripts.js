@@ -10,8 +10,7 @@ const firstTL = gsap.timeline();
 
 firstTL.from(".graph", {duration:1, opacity:0.25}, "box")
 .from(".red", {duration:1, x:0, ease:"bounce.out"}, "box")
-.from(".blue", {duration:1, x:350,  ease:"bounce.out"}, "box")
-.from(".green", {duration:5, transformOrigin: "0 0"}, "box");
+.from(".blue", {duration:1, x:350,  ease:"bounce.out"}, "box");
 
 
 const first2TL = gsap.timeline({delay:2});
