@@ -19,4 +19,4 @@ second2TL.to(".red", {duration:2, y:0, ease:"power1.out"},"box")
 .to(".blue", {duration:2, y:300, ease:"power1.out"}, "box");
 
 
-gsap.to(".green", {duration:5, transformOrigin:"left right"});
+gsap.from(".green", {duration:4, transformOrigin:"left", scaleX:0});
